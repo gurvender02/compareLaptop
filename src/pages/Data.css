@@ -1,0 +1,154 @@
+html, body {
+    overflow: hidden;
+    height: 100%; 
+    background-color: #F8F6E3;
+}
+
+
+
+.data-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FBF9F1;
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-boxes {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: none;
+    transition: transform 0.5s ease; 
+    
+}
+
+.search-boxes.lift-up {
+    transform: translateY(-10px); 
+}
+
+.search-boxes input {
+    margin: 5px;
+    padding: 10px;
+    border-color: #A0DEFF;
+    border-radius: 5px ;
+    width: 200px; 
+    background-color: #E5E1DA ;
+    border: none;
+    color: black;
+    
+}
+
+.search-boxes input::placeholder {
+    color: rgb(101, 101, 101);
+    opacity: 1; 
+}
+
+.empty-message {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; 
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+th, td {
+    border: 1px solid #ddd; 
+    padding: 12px; 
+    text-align: left; 
+    transition: background-color 0.3s;
+}
+
+th {
+    background-color: hsl(108, 55%, 44%); 
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+tr:hover {
+    background-color: #ddd; 
+}
+
+tr td {
+    transition: transform 0.2s;
+}
+
+tr:hover td {
+    transform: scale(1.02); 
+}
+
+.no-results {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}
+
+@media (max-width: 600px) {
+    .search-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-boxes input {
+        width: 100%; 
+    }
+}
+
+.golden-customer-list {
+    background-color: #fdfd96;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.golden-customer-list:hover {
+    background-color: #fffacd;
+    cursor: pointer;
+}
+
+.scroll-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent content from wrapping */
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ddd; /* Optional: Add a border for better visibility */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Optional: Background color for the scroll area */
+}
+
+.scroll-container ul {
+    display: inline-block; /* Ensure items in the list remain in one line */
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-container li {
+    display: inline-block; /* Display list items in a row */
+    margin-right: 15px; /* Add spacing between items */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

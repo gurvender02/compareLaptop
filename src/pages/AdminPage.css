@@ -1,0 +1,110 @@
+.admin-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.admin-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.admin-container h2,
+.admin-container h3 {
+    color: #2c3e50;
+}
+
+.admin-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.admin-container h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.sales-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.sales-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+}
+
+.sales-card h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #16a085;
+}
+
+.sales-card p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+.customer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.customer-list li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.customer-list li:hover {
+    background-color: #ecf0f1;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .sales-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sales-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+.scroll-container {
+    max-height: 300px; /* Adjust this to the desired height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ddd; /* Optional: Add a border for better visibility */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Optional: Background color for the scroll area */
+}
+
+.scroll-container ul {
+    list-style-type: none; /* Remove default bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-container li {
+    margin: 10px 0; /* Add spacing between items */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
